@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
-    
+    <div class="container"> 
+        <div class="row">
+            <div class="col-12">
+                <label for=""> Nome do Produto: </label>
+                <input type="text" class="form-control" id="campoNome">
+
+                <label for=""> Preço do Produto: </label>
+                <input type="number" class="form-control" id="campoPreco">
+
+                <label for=""> Taxa: </label>
+                <input type="number" class="form-control" id="campoTaxa">
+
+                <button class="btn btn-primary mt-3" id="calc"> calcular </button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <h2><span id="valorFinal"> Valor Final: </span></h2>
+        </div>
+    </div>
+    <script src="JavaScript/empresa.js"></script>
+    <script src="JavaScript/main.js"></script>
 </body>
 </html>
