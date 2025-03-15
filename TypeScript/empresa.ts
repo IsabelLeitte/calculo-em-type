@@ -4,13 +4,14 @@ namespace loja{
         private _nome:string;
         private _preco:number;
         private _taxa:number;
+        private _valorFinal:number;
  
         get nome(){
             return this. _nome;
         }
 
         set nome(nome:string){
-            this._nome
+            this. _nome
         }
 
         get preco(){
@@ -18,7 +19,7 @@ namespace loja{
         }
 
         set preco(nome:number){
-            this._preco
+            this. _preco
         }
 
         get taxa(){
@@ -26,11 +27,11 @@ namespace loja{
         }
 
         set taxa(taxa:number){
-            this._taxa
+            this. _taxa
         }
         
-        public calculoFinal():number{
-            return (this.taxa/100) * this.preco + this.preco;
+        public valorFinal():number{
+            return (this. _taxa/100) * this. _preco;
         }
     }
 }
