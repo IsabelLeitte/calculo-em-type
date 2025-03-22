@@ -4,7 +4,6 @@ namespace loja{
         private _nome:string;
         private _preco:number;
         private _taxa:number;
-        private _valorFinal:number;
  
         get nome(){
             return this. _nome;
